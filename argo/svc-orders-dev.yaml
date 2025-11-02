@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: svc-orders-dev
+  namespace: argocd
+spec:
+  destination:
+    namespace: dev
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/YOUR_GH_USERNAME/env.git
+    path: apps/svc-orders/dev
+    helm:
+      valueFiles: [values.yaml]
+  syncPolicy:
+    automated: { prune: true, selfHeal: true }
