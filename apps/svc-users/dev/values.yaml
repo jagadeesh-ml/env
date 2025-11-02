@@ -1,0 +1,4 @@
+image:
+  repository: ghcr.io/Jagadeesh-ml/svc-users
+  tag: "sha-placeholder"
+replicaCount: 2
