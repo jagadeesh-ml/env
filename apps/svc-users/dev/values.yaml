@@ -1,6 +1,6 @@
 image:
-  repository: ghcr.io/Jagadeesh-ml/svc-users
-  tag: "sha-placeholder"
+  repository: ghcr.io/jagadeesh-ml/svc-users
+  tag: "sha-5c968f2e6d18a4cb73b00da944b0238ea0f6e3b6"
   pullPolicy: IfNotPresent
 
 service:
