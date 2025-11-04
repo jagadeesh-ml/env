@@ -4,6 +4,7 @@ metadata:
   name: svc-users-dev
   namespace: argocd
 spec:
+  project: default            # REQUIRED FIELD
   destination:
     namespace: dev
     server: https://kubernetes.default.svc
@@ -11,6 +12,10 @@ spec:
     repoURL: https://github.com/Jagadeesh-ml/env.git
     path: apps/svc-users/dev
     helm:
-      valueFiles: [values.yaml]
+      valueFiles:
+        - values.yaml
   syncPolicy:
-    automated: { prune: true, selfHeal: true }
+    automated:
+      prune: true
+      selfHeal: true
+
