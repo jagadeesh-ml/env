@@ -1,11 +1,9 @@
 image:
   repository: ghcr.io/jagadeesh-ml/svc-users
-  tag: "sha-95843da715bc0675fc37a66024f4d55e7589f9d8"
+  tag: "sha-531e6cabadc374de06c6b9e115065d723934a36d"
   pullPolicy: IfNotPresent
-
 service:
   port: 80
   targetPort: 8080
-
 replicaCount: 2
 nameOverride: svc-users
