@@ -1,12 +1,9 @@
 fullnameOverride: svc-orders
 nameOverride: svc-orders
-
 image:
   repository: ghcr.io/jagadeesh-ml/svc-orders
-  tag: "sha-03ce01b8550e8644bc61d11ebf5edd9d0fd63998"
-
+  tag: "sha-7ff2375242710c5a279ce8c662b965d8bc39cded"
 replicaCount: 2
-
 service:
   port: 80
   targetPort: 8080
