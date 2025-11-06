@@ -1,4 +1,4 @@
 image:
   repository: ghcr.io/YOUR_GH_USERNAME/svc-orders
-  tag: "sha-placeholder"
+  tag: "sha-c8a82511c017d8a9c5993347c4184edfe1be2dc7"
 replicaCount: 2
