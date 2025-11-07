@@ -31,3 +31,5 @@ livenessProbe:
   httpGet: { path: /healthz, port: 8080 }
   initialDelaySeconds: 5
   periodSeconds: 10
+  - name: SERVICE_NAME
+    value: svc-payments

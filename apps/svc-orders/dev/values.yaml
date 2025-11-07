@@ -10,3 +10,7 @@ replicaCount: 1
 service:
   port: 80
   targetPort: 8080
+
+env:
+  - name: SERVICE_NAME
+    value: svc-orders
